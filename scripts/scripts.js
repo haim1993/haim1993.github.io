@@ -9,7 +9,7 @@
   }
 
   function startTimer() {
-    setInterval(displayNextImage, 1000);
+    setInterval(displayNextImage, 10000);
   }
   
  // function reloadFunction() {
