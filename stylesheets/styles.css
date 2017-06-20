@@ -1,17 +1,17 @@
- 
+
  /* Language Images */
  .language-en {
    position: relative;
    display: inline-block;
  }
  .language-en:hover .language-he { display: block; }
- 
+
  .language-he {
    display: none;
    position: absolute;
    min-width: 30px;
  }
- 
+
  /* Image Circle View */
  .img-circle {
     border-radius: 60%;
@@ -19,17 +19,17 @@
     margin-top: 60px;
     margin-bottom: 20px;
   }
-  
+
   /* Center text */
   div {
     text-align:  center;
     font-family: sans-serif;
   }
-  
+
   table { margin: auto; }
-  
+
   td { margin: 20px; }
-  
+
   .button {
     background-color: #FFFFFF;
     border: 1px solid #4CAF50;;
@@ -46,7 +46,7 @@
     color: #008000;
     border-color : #008000;
   }
-  
+
   /* Facebook Link */
   #facebook {
     background-image: url('Images/facebook.png');
@@ -54,7 +54,7 @@
     height: 85px;
   }
   #facebook:hover { background-image: url('Images/facebook_color.png'); }
-  
+
    /* Github Link */
   #github {
     background-image: url('Images/github.png');
@@ -62,7 +62,7 @@
     height: 85px;
   }
   #github:hover { background-image: url('Images/github_color.png'); }
-  
+
    /* Linkedin Link */
   #linkedin {
     background-image: url('Images/linkedin.png');
@@ -70,7 +70,7 @@
     height: 85px;
   }
   #linkedin:hover { background-image: url('Images/linkedin_color.png'); }
-  
+
   /* Email Contact Link */
   #email {
     background-image: url('Images/mail.png');
