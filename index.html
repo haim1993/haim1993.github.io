@@ -26,9 +26,9 @@
         </div>
 
         <div>
-            <h1 id="info">Hi. I'm Haim.</h1>
-            <p id="skills">Java Developer. Python Enthusiast.</p>
-            <p id="click-for-resume">Please click below to checkout my resume!</p>
+            <h1 id="title">Hi. I'm Haim.</h1>
+            <h6 id="skills">Software Developer, Freelance</h6>
+            <p id="details">Click here and checkout my resume!</p>
             <input type="button" class="button" value="RESUME" onClick="window.open('docs/resume-en.pdf');">
         </div>
     </article>
@@ -66,9 +66,9 @@
             if ($(".language").text() == 'EN') {
                 $(".flag").attr("src", "img/il.svg");
                 $(".language").text("HE");
-                $("#info").text("Hi. I'm Haim.");
-                $("#skills").text("Java Developer. Python Enthusiast.");
-                $("#click-for-resume").text("Please click below to checkout my resume!");
+                $("#title").text("Hi. I'm Haim.");
+                $("#skills").text("Software Developer, Freelance");
+                $("#details").text("Click here and checkout my resume!");
                 $(".button").attr("onClick", "window.open('docs/resume-en.pdf');")
 
 
@@ -76,9 +76,9 @@
             else {
                 $(".flag").attr("src", "img/us.svg");
                 $(".language").text("EN");
-                $("#info").text(".שלום. שמי חיים");
-                $("#skills").text(".מתכנת ג'אווה. חובב פייטון");
-                $("#click-for-resume").text("!לחצו כאן לקורות חיים");
+                $("#title").text(".שלום. שמי חיים");
+                $("#skills").text("מפתח תוכנה, פרילנס");
+                $("#details").text("!לחצו כאן לקורות חיים");
                 $(".button").attr("onClick", "window.open('docs/resume-he.pdf');")
             }
         });

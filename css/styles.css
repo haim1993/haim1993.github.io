@@ -62,15 +62,15 @@
            height: 50%;
        }
   }
-  #info {
+  #title {
       margin-bottom: 16px;
   }
   @media screen and (max-width: 479px) {
-       #info {
+       #title {
            font-size: 200%;
            margin-bottom: 8px;
        }
-       #skills, #click-for-resume {
+       #skills, #details {
            margin-bottom: 5px;
            font-size: 90%;
        }
