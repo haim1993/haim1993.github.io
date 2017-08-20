@@ -1,1 +1,89 @@
-<!DOCTYPE html><html lang="en-us"><head> <meta charset="UTF-8"> <title>Welcome!</title> <link rel="shortcut icon" href="stylesheets/Images/welcome.png"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"></head><body bgcolor="#FFFFFF" onload="startTimer()"> <div class="language-en"> <img onclick="document.location.reload();" src="stylesheets/Images/flag-english.png" width="60px" height="60px"> <div class="language-he"> <img onclick="document.location='index-he.html';" src="stylesheets/Images/flag-hebrew.png" width="60px" height="60px"> </div></div><div> <img id="img" class="img-circle" src="stylesheets/Images/profile.jpeg" style="width:200px; height:280px;"> <h1>Hi. I'm Haim.</h1> <p>Java Developer. Python Enthusiast.</p><p>Please click below to checkout my resume!</p><input type="button" class="button" value="RESUME" onClick="window.open('Files/resume-en.pdf');"> </div><table> <tr> <td> <a href="https://www.facebook.com/Shlez1993" target="_blank"> <div id="facebook"></div></a> </td><td> <a href="https://github.com/haim1993" target="_blank"> <div id="github"></div></a> </td><td> <a href="https://linkedin.com/in/shlez1993" target="_blank"> <div id="linkedin"></div></a> </td><td> <a href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank"> <div id="email"></div></a> </td></tr></table></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <link rel="shortcut icon" href="img/welcome.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body bgcolor="#FFFFFF" onload="startTimer()">
+    <header>
+        <div class="select-language">
+            <img class="flag" src="img/il.svg"/>
+            <span class="language">HE</span>
+        </div>
+    </header>
+
+    <article>
+        <div>
+            <img id="profile" src="img/profile.jpeg"/>
+        </div>
+
+        <div>
+            <h1 id="info">Hi. I'm Haim.</h1>
+            <p id="skills">Java Developer. Python Enthusiast.</p>
+            <p id="click-for-resume">Please click below to checkout my resume!</p>
+            <input type="button" class="button" value="RESUME" onClick="window.open('docs/resume-en.pdf');">
+        </div>
+    </article>
+
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/Shlez1993" target="_blank">
+                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU1MCA1NTAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1NTAgNTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48Zz48Y2lyY2xlIGN4PSIyNzUiIGN5PSIyNzUiIGZpbGw9IiMzRjY1QTYiIHI9IjI1NiIvPjxwYXRoIGQ9Ik0yMzYuMSwxOTAuOGMwLDcuNCwwLDQwLjQsMCw0MC40aC0yOS42djQ5LjRoMjkuNlY0MTZoNjAuOFYyODAuNWg0MC44ICAgICBjMCwwLDMuOC0yMy43LDUuNy00OS42Yy01LjMsMC00Ni4yLDAtNDYuMiwwczAtMjguNywwLTMzLjhjMC01LDYuNi0xMS44LDEzLjItMTEuOGM2LjUsMCwyMC4zLDAsMzMuMSwwYzAtNi43LDAtMzAsMC01MS40ICAgICBjLTE3LjEsMC0zNi41LDAtNDUsMEMyMzQuNiwxMzQsMjM2LjEsMTgzLjQsMjM2LjEsMTkwLjh6IiBmaWxsPSIjRkZGRkZGIiBpZD0iRmFjZWJvb2tfNF8iLz48L2c+PC9nPjwvc3ZnPg==">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/haim1993" target="_blank">
+                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTI5Ni4xMzMsMzU0LjE3NGM0OS44ODUtNS44OTEsMTAyLjk0Mi0yNC4wMjksMTAyLjk0Mi0xMTAuMTkyICAgYzAtMjQuNDktOC42MjQtNDQuNDQ4LTIyLjY3LTU5Ljg2OWMyLjI2Ni01Ljg5LDkuNTE1LTI4LjExNC0yLjczNC01OC45NDdjMCwwLTE4LjEzOS01Ljg5OC02MC43NTksMjIuNjY5ICAgYy0xOC4xMzktNC45ODMtMzguMDktOC4xNjMtNTYuNjgyLTguMTYzYy0xOS4wNTMsMC0zOS4wMTEsMy4xOC01Ni42OTcsOC4xNjNjLTQzLjA4Mi0yOC41NjctNjEuMjItMjIuNjY5LTYxLjIyLTIyLjY2OSAgIGMtMTIuMjQxLDMwLjgzMy00Ljk4Myw1My4wNTctMi43MTgsNTguOTQ3Yy0xNC4wNjEsMTUuNDItMjIuNjc3LDM1LjM3OS0yMi42NzcsNTkuODY5YzAsODYuMTYzLDUzLjA1NywxMDQuMzAxLDEwMi45NDIsMTEwLjE5MiAgIGMtNi4zNDQsNS40NTItMTIuMjQxLDE1Ljg3My0xNC41MDcsMzAuMzg3Yy0xMi43MDIsNS40MzgtNDUuODA4LDE1Ljg3My02NS43NTgtMTguNTkyYzAsMC0xMS43OTUtMjEuMzEtMzQuMDEyLTIyLjY2OSAgIGMwLDAtMjIuMjI0LTAuNDUzLTEuODEzLDEzLjU5MmMwLDAsMTQuOTYsNi44MTIsMjQuOTQzLDMyLjY1M2MwLDAsMTMuNiw0My4wODksNzYuMTc5LDI5LjQ4djM4LjU0MyAgIGMwLDUuOTA2LTQuNTMsMTIuNzAyLTE1Ljg2NSwxMC44OUM5Ni4xMzksNDM4Ljk3NywzMi4yLDM1NC42MjYsMzIuMiwyNTUuNzdjMC0xMjMuODA3LDEwMC4yMTYtMjI0LjAyMiwyMjQuMDMtMjI0LjAyMiAgIGMxMjMuMzQ3LDAsMjI0LjAyMywxMDAuMjE2LDIyMy41NywyMjQuMDIyYzAsOTguODU2LTYzLjk0NiwxODIuNzU0LTE1Mi44MjgsMjEyLjY4OGMtMTEuMzQyLDIuMjY2LTE1Ljg3My00LjUzLTE1Ljg3My0xMC44OSAgIFYzOTUuNDVDMzExLjEsMzc0LjU3NywzMDQuMjg4LDM2MC45ODUsMjk2LjEzMywzNTQuMTc0TDI5Ni4xMzMsMzU0LjE3NHogTTUxMiwyNTYuMjNDNTEyLDExNC43MywzOTcuMjYzLDAsMjU2LjIzLDAgICBDMTE0LjczLDAsMCwxMTQuNzMsMCwyNTYuMjNDMCwzOTcuMjYzLDExNC43Myw1MTIsMjU2LjIzLDUxMkMzOTcuMjYzLDUxMiw1MTIsMzk3LjI2Myw1MTIsMjU2LjIzTDUxMiwyNTYuMjN6IiBmaWxsPSIjMEQyNjM2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9zdmc+">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shlez1993/" target="_blank">
+                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDExMi4xOTYgMTEyLjE5NjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGc+PGNpcmNsZSBjeD0iNTYuMDk4IiBjeT0iNTYuMDk3IiByPSI1Ni4wOTgiIHN0eWxlPSJmaWxsOiMwMDdBQjk7Ii8+PGc+PHBhdGggZD0iTTg5LjYxNiw2MC42MTF2MjMuMTI4SDc2LjIwN1Y2Mi4xNjFjMC01LjQxOC0xLjkzNi05LjExOC02Ljc5MS05LjExOCAgICBjLTMuNzA1LDAtNS45MDYsMi40OTEtNi44NzgsNC45MDNjLTAuMzUzLDAuODYyLTAuNDQ0LDIuMDU5LTAuNDQ0LDMuMjY4djIyLjUyNEg0OC42ODRjMCwwLDAuMTgtMzYuNTQ2LDAtNDAuMzI5aDEzLjQxMXY1LjcxNSAgICBjLTAuMDI3LDAuMDQ1LTAuMDY1LDAuMDg5LTAuMDg5LDAuMTMyaDAuMDg5di0wLjEzMmMxLjc4Mi0yLjc0Miw0Ljk2LTYuNjYyLDEyLjA4NS02LjY2MiAgICBDODMuMDAyLDQyLjQ2Miw4OS42MTYsNDguMjI2LDg5LjYxNiw2MC42MTFMODkuNjE2LDYwLjYxMXogTTM0LjY1NiwyMy45NjljLTQuNTg3LDAtNy41ODgsMy4wMTEtNy41ODgsNi45NjcgICAgYzAsMy44NzIsMi45MTQsNi45Nyw3LjQxMiw2Ljk3aDAuMDg3YzQuNjc3LDAsNy41ODUtMy4wOTgsNy41ODUtNi45N0M0Mi4wNjMsMjYuOTgsMzkuMjQ0LDIzLjk2OSwzNC42NTYsMjMuOTY5TDM0LjY1NiwyMy45Njl6ICAgICBNMjcuODY1LDgzLjczOUg0MS4yN1Y0My40MDlIMjcuODY1VjgzLjczOXoiIHN0eWxlPSJmaWxsOiNGMUYyRjI7Ii8+PC9nPjwvZz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=">
+                </a>
+            </li>
+            <li>
+                <a href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank">
+                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJmbGF0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgaWQ9Im1haWwiPjxwYXRoIGQ9Ik0zMCw2MCBDNDYuNTY4NTQzMyw2MCA2MCw0Ni41Njg1NDMzIDYwLDMwIEM2MCwxMy40MzE0NTY3IDQ2LjU2ODU0MzMsMCAzMCwwIEMxMy40MzE0NTY3LDAgMCwxMy40MzE0NTY3IDAsMzAgQzAsNDYuNTY4NTQzMyAxMy40MzE0NTY3LDYwIDMwLDYwIFoiIGZpbGw9IiMzNDk4REIiLz48cGF0aCBkPSJNMzAsMzMuNDYxNTM4NSBMNDcuMzA3NjkyMywxOC40NjE1Mzg1IEwxMi42OTIzMDc3LDE4LjQ2MTUzODUgTDMwLDMzLjQ2MTUzODUgWiBNMjUuMzI1MTc2NSwzMS44MDEwNTM2IEwzMCwzNS42MzgyMzk5IEwzNC42MDE1ODEzLDMxLjgwMTA1MzYgTDQ3LjMwNzY5MjMsNDIuNjkyMzA3NyBMMTIuNjkyMzA3Nyw0Mi42OTIzMDc3IEwyNS4zMjUxNzY1LDMxLjgwMTA1MzYgWiBNMTEuNTM4NDYxNSw0MS41Mzg0NjE1IEwxMS41Mzg0NjE1LDE5LjYxNTM4NDYgTDI0LjIzMDc2OTIsMzAuNTc2OTIzMSBMMTEuNTM4NDYxNSw0MS41Mzg0NjE1IFogTTQ4LjQ2MTUzODUsNDEuNTM4NDYxNSBMNDguNDYxNTM4NSwxOS42MTUzODQ2IEwzNS43NjkyMzA4LDMwLjU3NjkyMzEgTDQ4LjQ2MTUzODUsNDEuNTM4NDYxNSBaIiBmaWxsPSIjRkZGRkZGIi8+PC9nPjwvZz48L3N2Zz4=">
+                </a>
+            </li>
+        </ul>
+        <p>© 2017 Haim Schlesinger</p>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $(".select-language").click(function() {
+            if ($(".language").text() == 'EN') {
+                $(".flag").attr("src", "img/il.svg");
+                $(".language").text("HE");
+                $("#info").text("Hi. I'm Haim.");
+                $("#skills").text("Java Developer. Python Enthusiast.");
+                $("#click-for-resume").text("Please click below to checkout my resume!");
+                $(".button").attr("onClick", "window.open('docs/resume-en.pdf');")
+
+
+            }
+            else {
+                $(".flag").attr("src", "img/us.svg");
+                $(".language").text("EN");
+                $("#info").text(".שלום. שמי חיים");
+                $("#skills").text(".מתכנת ג'אווה. חובב פייטון");
+                $("#click-for-resume").text("!לחצו כאן לקורות חיים");
+                $(".button").attr("onClick", "window.open('docs/resume-he.pdf');")
+            }
+        });
+
+    });
+</script>
+
+</html>
