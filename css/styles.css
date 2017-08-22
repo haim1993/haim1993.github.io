@@ -1,8 +1,7 @@
-
-
 header {
     margin-top: 5px;
 }
+
 #footer {
     text-align: center;
     display: block;
@@ -14,20 +13,23 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#footer > p {
+
+#footer>p {
     margin-bottom: 1px;
 }
+
 @media screen and (max-height: 690px) {
     #footer {
         position: relative;
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 479px) {
     #footer {
         font-size: 80%;
     }
-    #footer > ul {
+    #footer>ul {
         margin-bottom: 5px;
     }
 }
@@ -37,19 +39,21 @@ header {
     left: %;
     display: block;
     /*float: left;*/
-    width:5%;
+    width: 5%;
     min-width: 60px;
     margin-top: 2px;
     margin-left: 20px;
-    height:25px;
+    height: 25px;
     border: 1px solid #FFFFFF;
     border-radius: 3px;
 }
+
 .select-language:hover {
     border: 1px solid #1F1F1F;
     background-color: #F8F8FF;
     cursor: pointer;
 }
+
 .flag {
     position: absolute;
     right: 50%;
@@ -59,6 +63,7 @@ header {
     height: 18px;
     margin: auto 1px;
 }
+
 .language {
     /*right: 50%;*/
     position: absolute;
@@ -97,8 +102,8 @@ header {
     color: #ffffff;
     text-decoration: none;
 }
-#contact-btn:hover,
-#contact-btn:focus {
+
+#contact-btn:hover, #contact-btn:focus {
     border: 1px solid #b32e2e;
     background: #ff5959;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
@@ -107,6 +112,7 @@ header {
     color: #ffffff;
     text-decoration: none;
 }
+
 #contact-btn:active {
     background: #982727;
     background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
@@ -114,55 +120,42 @@ header {
     background: linear-gradient(to bottom, #982727, #982727);
 }
 
-
-
-
-@media screen and (min-height: ) {
-
-}
-
 #project-frame {
     border: none;
-    display: none;
     width: 100%;
     height: 100%;
 }
 
-#project-image {
-    margin-top: 10px;
-    background-image: url(http://via.placeholder.com/300x300);
-}
-@media screen and (max-width: 768px) {
-    .project-image {
-        background-image: url('http://via.placeholder.com/540x300');
-    }
-}
 .container {
     width: 100%;
-
-    margin-left:30px;
-
+    margin-left: 30px;
 }
 
 #nav {
     margin-bottom: 2px;
 }
-#nav > li {
+
+#nav>li {
     font-size: 120%;
     font-weight: bold;
 }
-#nav > li :hover {
-    color: 	#A9A9A9;
+
+#nav>li :hover {
+    color: #A9A9A9;
 }
-#nav > li > a {
+
+#nav>li>a {
     text-decoration: none;
 }
-#nav > li > a:visited {
+
+#nav>li>a:visited {
     color: none;
 }
 
- /* Image Circle View */
- #profile {
+
+/* Image Circle View */
+
+#profile {
     margin: auto;
     border-radius: 10%;
     border: 1px solid #021a40;
@@ -170,57 +163,62 @@ header {
     margin-bottom: 20px;
     width: 200px;
     height: 280px;
-  }
-  @media screen and (max-width: 479px) {
-       #profile {
-           border-radius: 40%;
-           width: 40%;
-           height: 40%;
-       }
-  }
-  #title {
-      margin-bottom: 16px;
-  }
-  @media screen and (max-width: 479px) {
-       #title {
-           font-size: 200%;
-           margin-bottom: 8px;
-       }
-       #skills, #details {
-           margin-bottom: 5px;
-           font-size: 90%;
-       }
+}
 
-  }
+@media screen and (max-width: 479px) {
+    #profile {
+        border-radius: 40%;
+        width: 40%;
+        height: 40%;
+    }
+}
 
-  /* Center text */
-  div {
-    text-align:  center;
+#title {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 479px) {
+    #title {
+        font-size: 200%;
+        margin-bottom: 8px;
+    }
+    #skills, #details {
+        margin-bottom: 5px;
+        font-size: 90%;
+    }
+}
+
+
+/* Center text */
+
+div {
+    text-align: center;
     font-family: sans-serif;
-  }
+}
 
-  .icons {
-      width: 30px;
-      height: 30px;
-  }
-  @media screen and (max-width: 479px) {
-      .icons {
-          width: 30px;
-          height: 30px;
-      }
-  }
+.icons {
+    width: 30px;
+    height: 30px;
+}
 
-  ul {
-      list-style-type: none;
-      padding: 0px;
-  }
+@media screen and (max-width: 479px) {
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
+}
 
-  li {
-      display: inline;
-      margin: 3px;
-  }
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
 
-  .button {
+li {
+    display: inline;
+    margin: 3px;
+}
+
+.button {
     background-color: #FFFFFF;
     border: 1px solid #4CAF50;;
     color: #4CAF50;;
@@ -236,19 +234,15 @@ header {
     color: #008000;
     border-color : #008000;
   }
-  @media screen and (max-width: 991px) {
-      .button {
 
-      }
+@media screen and (max-width: 991px) {
 
-  }
+}
 
-  @media screen and (max-width: 767px) {
-       /* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+}
 
-  }
-
-  @media screen and (max-width: 479px) {
-       /* start of phone styles */
-
-  }
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+}
