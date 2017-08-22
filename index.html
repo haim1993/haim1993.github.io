@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" style="min-width: 991;">
 
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,44 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 
 <body bgcolor="#FFFFFF" onload="startTimer()">
-    <header>
-        <div class="select-language">
+    <header class="row">
+        <!-- <div class="select-language">
             <img class="flag" src="img/il.svg"/>
             <span class="language">HE</span>
-        </div>
+        </div> -->
+        <ul id="nav" class="col-md-12 text-center">
+            <li><a id="nav-home" class="" href="#">Home</a></li>
+            <li><a id="nav-projects" class="" href="#">Projects</a></li>
+        </ul>
     </header>
 
-    <article>
-        <div>
-            <img id="profile" src="img/profile.jpeg"/>
+    <article class="project-container">
+        <div class="row">
+            <div id="profile-container" class="col-md-12">
+                <img id="profile" src="img/profile.jpeg"/>
+                <div>
+                    <h1 id="title">Hi. I'm Haim.</h1>
+                    <h6 id="skills">Software Developer, Freelance</h6>
+                    <p id="details">Click here and checkout my resume!</p>
+                    <input id="resume-btn" type="button" class="button" value="RESUME" onClick="window.open('docs/resume-en.pdf');">
+                </div>
+            </div>
+            <div id="project-container">
+                <iframe id="project-frame" src="projects.html"></iframe>
+            </div>
+            <div id="project-info" class="text-left">
+                <p>
+                    Please take a moment and have a look at my projects. If you find anything interesting, please let me know!
+                </p>
+                <a id="contact-btn" class="text-center" href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank">Contact</a>
+            </div>
         </div>
 
-        <div>
-            <h1 id="title">Hi. I'm Haim.</h1>
-            <h6 id="skills">Software Developer, Freelance</h6>
-            <p id="details">Click here and checkout my resume!</p>
-            <input type="button" class="button" value="RESUME" onClick="window.open('docs/resume-en.pdf');">
-        </div>
     </article>
 
     <footer id="footer">
@@ -59,31 +75,5 @@
         <p>© 2017 Haim Schlesinger</p>
     </footer>
 </body>
-
-<script>
-    $(document).ready(function() {
-        $(".select-language").click(function() {
-            if ($(".language").text() == 'EN') {
-                $(".flag").attr("src", "img/il.svg");
-                $(".language").text("HE");
-                $("#title").text("Hi. I'm Haim.");
-                $("#skills").text("Software Developer, Freelance");
-                $("#details").text("Click here and checkout my resume!");
-                $(".button").attr("onClick", "window.open('docs/resume-en.pdf');")
-
-
-            }
-            else {
-                $(".flag").attr("src", "img/us.svg");
-                $(".language").text("EN");
-                $("#title").text(".שלום. שמי חיים");
-                $("#skills").text("מפתח תוכנה, פרילנס");
-                $("#details").text("!לחצו כאן לקורות חיים");
-                $(".button").attr("onClick", "window.open('docs/resume-he.pdf');")
-            }
-        });
-
-    });
-</script>
 
 </html>
