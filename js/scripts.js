@@ -1,6 +1,10 @@
 $(document).ready(function() {
+
+    var status = "home";
+
     // Change language text + resume
-    $("#nav-home").css('color', '#A9A9A9');
+    $("#nav-projects").css('color', '#A9A9A9');
+    $("#nav-home").css({'border-bottom':'3px solid', 'border-bottom-color': '#0275d8'});
 
     // $(".select-language").click(function() {
     //     if ($(".language").text() == 'EN') {
@@ -22,43 +26,49 @@ $(document).ready(function() {
 
     if ($(window).width() > 990) {
         $("#nav-projects").click(function() {
-            $("#nav-projects").css('color', '#A9A9A9');
-            $("#nav-home").css('color', '#0275d8');
-            $right = document.getElementById('profile-container').style.right;
-            if ($right != '36%') {
-                $("#profile-container").css({
-                    'right': '',
-                    'left': ''
-                }).animate({
-                    'right': '36%',
-                    'margin-left': '10px'
-                });
-                $("#project-container").fadeIn(900);
-                $("#project-info").fadeIn(1200);
-                $("#contact-btn").fadeIn(1200);
-                $("#profile-info").fadeOut("fast");
-                $("#banner-resume").slideDown();
+            if (status == "home") {
+                status = "projects";
+                $("#nav-projects").css({'color':'#0275d8', 'border-bottom':'3px solid', 'border-bottom-color':'#0275d8'});
+                $("#nav-home").css({'color':'#A9A9A9', 'border-bottom':'none'});
+                $right = document.getElementById('profile-container').style.right;
+                if ($right != '36%') {
+                    $("#profile-container").css({
+                        'right': '',
+                        'left': ''
+                    }).animate({
+                        'right': '36%',
+                        'margin-left': '10px'
+                    });
+                    $("#project-container").fadeIn(900);
+                    $("#project-info").fadeIn(1200);
+                    $("#contact-btn").fadeIn(1200);
+                    $("#profile-info").fadeOut("fast");
+                    $("#banner-resume").slideDown();
+                }
             }
         });
 
         $("#nav-home").click(function() {
-            $("#nav-home").css('color', '#A9A9A9');
-            $("#nav-projects").css('color', '#0275d8');
-            $right = document.getElementById('profile-container').style.right;
-            $left = document.getElementById('profile-container').style.left;
-            if ($left != '0%') {
-                $("#profile-container").css({
-                    'right': $right,
-                    'left': $left
-                }).animate({
-                    'right': '0%',
-                    'margin-left': '0px'
-                });
-                $("#project-info").hide();
-                $("#contact-btn").hide();
-                $("#project-container").hide("slide", function() { direction: "left"});
-                $("#profile-info").fadeIn("1200");
-                $("#banner-resume").slideUp();
+            if (status == "projects") {
+                status = "home";
+                $("#nav-home").css({'color':'#0275d8', 'border-bottom':'3px solid', 'border-bottom-color':'#0275d8'});
+                $("#nav-projects").css({'color':'#A9A9A9', 'border-bottom':'none'});
+                $right = document.getElementById('profile-container').style.right;
+                $left = document.getElementById('profile-container').style.left;
+                if ($left != '0%') {
+                    $("#profile-container").css({
+                        'right': $right,
+                        'left': $left
+                    }).animate({
+                        'right': '0%',
+                        'margin-left': '0px'
+                    });
+                    $("#project-info").hide();
+                    $("#contact-btn").hide();
+                    $("#project-container").hide("slide", function() { direction: "left"});
+                    $("#profile-info").fadeIn("1200");
+                    $("#banner-resume").slideUp();
+                }
             }
         });
     }

@@ -291,18 +291,16 @@ li {
 #nav>li {
     font-size: 120%;
     font-weight: bold;
-}
-
-#nav>li :hover {
-    color: #A9A9A9;
+    color: #0275d8;
 }
 
 #nav>li>a {
     text-decoration: none;
+    padding-bottom: 3px;
 }
 
 #nav>li>a:visited {
-    color: none;
+    color: #0275d8;
 }
 
 #menu-btn {
