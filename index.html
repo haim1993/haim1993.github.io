@@ -117,15 +117,13 @@
                 </a>
             </li>
         </ul>
-        <p>© 2017 Haim Schlesinger</p>
+        <p>© <span id="current_year"></span> Haim Schlesinger</p>
     </footer>
 </body>
 
 <script>
     (function() {
-
         "use strict";
-
         var toggles = document.querySelectorAll(".c-hamburger");
 
         for (var i = toggles.length - 1; i >= 0; i--) {
@@ -139,8 +137,10 @@
                 (this.classList.contains("is-active") === true) ? this.classList.remove("is-active"): this.classList.add("is-active");
             });
         }
-
     })();
+
+    document.getElementById("current_year").innerHTML = new Date().getFullYear();
+
 </script>
 
 </html>
