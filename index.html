@@ -2,145 +2,343 @@
 <html lang="en-us" style="min-width: 991;">
 
 <head>
-    <meta charset="UTF-8">
     <title>Welcome!</title>
-    <link rel="shortcut icon" href="img/welcome.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script src="js/scripts.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/index<768.css" rel="stylesheet">
 </head>
 
+<body>
 
-<body bgcolor="#FFFFFF" onload="startTimer()">
-    <header class="row">
-        <!-- <div class="select-language">
-            <img class="flag" src="img/il.svg"/>
-            <span class="language">HE</span>
-        </div> -->
-        <ul id="nav" class="col-md-12 text-center">
-            <li><a id="nav-home" class="" href="#">Home</a></li>
-            <li><a id="nav-projects" class="" href="#">Projects</a></li>
-        </ul>
-        <div id="banner-resume" onClick="window.open('docs/resume-en.pdf');">
-            Resume
-        </div>
+    <div class="page d-flex flex-row">
 
-        <div id="menu" class="col-md-12">
-            <button id="menu-btn" class="c-hamburger c-hamburger--htx">
-                <span>toggle menu</span>
-            </button>
-            <div id="menu-slider">
-                <div id="block-space"></div>
-                <button id="slider-home" class="slider-item">
-                    <a href="#">Home</a>
-                </button>
-
-                <button id="slider-projects" class="slider-item">
-                    <a href="#">Projects</a>
-                </button>
-
-                <button id="slider-resume" class="slider-item" onClick="window.open('docs/resume-en.pdf');">
-                    <a href="#">Resume</a>
-                </button>
-
-                <button id="slider-contact" class="slider-item">
-                    <a href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank">Contact</a>
-                </button>
-            </div>
-        </div>
-
-    </header>
-
-    <article class="project-container">
-        <div class="row">
-            <div id="profile-container" class="col-md-12">
-                <img id="profile" src="img/profile.jpeg" />
-                <div id="profile-info">
-                    <h1 id="title">Hi. I'm Haim.</h1>
-                    <h6 id="skills">Software Developer, Freelance</h6>
-                    <p id="details">Click here and checkout my resume!</p>
-                    <input id="resume-btn" type="button" class="button" value="RESUME" onClick="window.open('docs/resume-en.pdf');">
-                </div>
-                <div id="project-info" class="text-left">
-                    <p>
-                        <h5><b>SKILLS</b></h5>
-                        <font size="4">
-                            Problem solver
-                            <br />Creative thinker
-                            <br />Born Leader
-                        </font>
+        <!-- Left Screen (Top in responsive) -->
+        <div id="left" class="position-fixed">
+            <img class="left-bg-image" />
+            <div id="info" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="text-center">
+                    <p class="h2">
+                        Hi. I'm Haim.
+                    </p>
+                    <p class="h4">
+                        a software developer,
+                    </p>
+                    <p class="h4">
+                        working remotely.
                     </p>
                 </div>
-                <a id="contact-btn" class="text-center" href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank" style="display: none;">Contact</a>
+
+                <br />
+
+                <a href="mailto:shlez1993.hs@gmail.com">
+                    <div class="btn bg-success text-white">Get in touch</div>
+                </a>
+
+                <br />
+
             </div>
-            <div id="project-container" style="display: none;">
-                <iframe id="project-frame" src="projects.html"></iframe>
+            <div id="links" class="d-flex justify-content-center">
+                <div>
+                    <a href="https://github.com/haim1993" target="_blank"><i class="h3 p-3 fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/Shlez1993" target="_blank"><i class="h3 p-3 fab fa-facebook-f"></i></a>
+                    <a href="https://codepen.io/haim1993/" target="_blank"><i class="h3 p-3 fab fa-codepen"></i></a>
+                    <a href="https://www.linkedin.com/in/shlez1993/" target="_blank"><i class="h3 p-3 fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/shlez1993/" target="_blank"><i class="h3 p-3 fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
 
-    </article>
+        <!-- Width Space-->
+        <div class="w-50"></div>
 
-    <footer id="footer">
-        <ul>
-            <li>
-                <a class="no-hover-effect" href="https://www.facebook.com/Shlez1993" target="_blank">
-                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU1MCA1NTAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1NTAgNTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48Zz48Y2lyY2xlIGN4PSIyNzUiIGN5PSIyNzUiIGZpbGw9IiMzRjY1QTYiIHI9IjI1NiIvPjxwYXRoIGQ9Ik0yMzYuMSwxOTAuOGMwLDcuNCwwLDQwLjQsMCw0MC40aC0yOS42djQ5LjRoMjkuNlY0MTZoNjAuOFYyODAuNWg0MC44ICAgICBjMCwwLDMuOC0yMy43LDUuNy00OS42Yy01LjMsMC00Ni4yLDAtNDYuMiwwczAtMjguNywwLTMzLjhjMC01LDYuNi0xMS44LDEzLjItMTEuOGM2LjUsMCwyMC4zLDAsMzMuMSwwYzAtNi43LDAtMzAsMC01MS40ICAgICBjLTE3LjEsMC0zNi41LDAtNDUsMEMyMzQuNiwxMzQsMjM2LjEsMTgzLjQsMjM2LjEsMTkwLjh6IiBmaWxsPSIjRkZGRkZGIiBpZD0iRmFjZWJvb2tfNF8iLz48L2c+PC9nPjwvc3ZnPg==">
-                </a>
-            </li>
-            <li>
-                <a class="no-hover-effect" href="https://github.com/haim1993" target="_blank">
-                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTI5Ni4xMzMsMzU0LjE3NGM0OS44ODUtNS44OTEsMTAyLjk0Mi0yNC4wMjksMTAyLjk0Mi0xMTAuMTkyICAgYzAtMjQuNDktOC42MjQtNDQuNDQ4LTIyLjY3LTU5Ljg2OWMyLjI2Ni01Ljg5LDkuNTE1LTI4LjExNC0yLjczNC01OC45NDdjMCwwLTE4LjEzOS01Ljg5OC02MC43NTksMjIuNjY5ICAgYy0xOC4xMzktNC45ODMtMzguMDktOC4xNjMtNTYuNjgyLTguMTYzYy0xOS4wNTMsMC0zOS4wMTEsMy4xOC01Ni42OTcsOC4xNjNjLTQzLjA4Mi0yOC41NjctNjEuMjItMjIuNjY5LTYxLjIyLTIyLjY2OSAgIGMtMTIuMjQxLDMwLjgzMy00Ljk4Myw1My4wNTctMi43MTgsNTguOTQ3Yy0xNC4wNjEsMTUuNDItMjIuNjc3LDM1LjM3OS0yMi42NzcsNTkuODY5YzAsODYuMTYzLDUzLjA1NywxMDQuMzAxLDEwMi45NDIsMTEwLjE5MiAgIGMtNi4zNDQsNS40NTItMTIuMjQxLDE1Ljg3My0xNC41MDcsMzAuMzg3Yy0xMi43MDIsNS40MzgtNDUuODA4LDE1Ljg3My02NS43NTgtMTguNTkyYzAsMC0xMS43OTUtMjEuMzEtMzQuMDEyLTIyLjY2OSAgIGMwLDAtMjIuMjI0LTAuNDUzLTEuODEzLDEzLjU5MmMwLDAsMTQuOTYsNi44MTIsMjQuOTQzLDMyLjY1M2MwLDAsMTMuNiw0My4wODksNzYuMTc5LDI5LjQ4djM4LjU0MyAgIGMwLDUuOTA2LTQuNTMsMTIuNzAyLTE1Ljg2NSwxMC44OUM5Ni4xMzksNDM4Ljk3NywzMi4yLDM1NC42MjYsMzIuMiwyNTUuNzdjMC0xMjMuODA3LDEwMC4yMTYtMjI0LjAyMiwyMjQuMDMtMjI0LjAyMiAgIGMxMjMuMzQ3LDAsMjI0LjAyMywxMDAuMjE2LDIyMy41NywyMjQuMDIyYzAsOTguODU2LTYzLjk0NiwxODIuNzU0LTE1Mi44MjgsMjEyLjY4OGMtMTEuMzQyLDIuMjY2LTE1Ljg3My00LjUzLTE1Ljg3My0xMC44OSAgIFYzOTUuNDVDMzExLjEsMzc0LjU3NywzMDQuMjg4LDM2MC45ODUsMjk2LjEzMywzNTQuMTc0TDI5Ni4xMzMsMzU0LjE3NHogTTUxMiwyNTYuMjNDNTEyLDExNC43MywzOTcuMjYzLDAsMjU2LjIzLDAgICBDMTE0LjczLDAsMCwxMTQuNzMsMCwyNTYuMjNDMCwzOTcuMjYzLDExNC43Myw1MTIsMjU2LjIzLDUxMkMzOTcuMjYzLDUxMiw1MTIsMzk3LjI2Myw1MTIsMjU2LjIzTDUxMiwyNTYuMjN6IiBmaWxsPSIjMEQyNjM2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9zdmc+">
-                </a>
-            </li>
-            <li>
-                <a class="no-hover-effect" href="https://www.linkedin.com/in/shlez1993/" target="_blank">
-                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDExMi4xOTYgMTEyLjE5NjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGc+PGNpcmNsZSBjeD0iNTYuMDk4IiBjeT0iNTYuMDk3IiByPSI1Ni4wOTgiIHN0eWxlPSJmaWxsOiMwMDdBQjk7Ii8+PGc+PHBhdGggZD0iTTg5LjYxNiw2MC42MTF2MjMuMTI4SDc2LjIwN1Y2Mi4xNjFjMC01LjQxOC0xLjkzNi05LjExOC02Ljc5MS05LjExOCAgICBjLTMuNzA1LDAtNS45MDYsMi40OTEtNi44NzgsNC45MDNjLTAuMzUzLDAuODYyLTAuNDQ0LDIuMDU5LTAuNDQ0LDMuMjY4djIyLjUyNEg0OC42ODRjMCwwLDAuMTgtMzYuNTQ2LDAtNDAuMzI5aDEzLjQxMXY1LjcxNSAgICBjLTAuMDI3LDAuMDQ1LTAuMDY1LDAuMDg5LTAuMDg5LDAuMTMyaDAuMDg5di0wLjEzMmMxLjc4Mi0yLjc0Miw0Ljk2LTYuNjYyLDEyLjA4NS02LjY2MiAgICBDODMuMDAyLDQyLjQ2Miw4OS42MTYsNDguMjI2LDg5LjYxNiw2MC42MTFMODkuNjE2LDYwLjYxMXogTTM0LjY1NiwyMy45NjljLTQuNTg3LDAtNy41ODgsMy4wMTEtNy41ODgsNi45NjcgICAgYzAsMy44NzIsMi45MTQsNi45Nyw3LjQxMiw2Ljk3aDAuMDg3YzQuNjc3LDAsNy41ODUtMy4wOTgsNy41ODUtNi45N0M0Mi4wNjMsMjYuOTgsMzkuMjQ0LDIzLjk2OSwzNC42NTYsMjMuOTY5TDM0LjY1NiwyMy45Njl6ICAgICBNMjcuODY1LDgzLjczOUg0MS4yN1Y0My40MDlIMjcuODY1VjgzLjczOXoiIHN0eWxlPSJmaWxsOiNGMUYyRjI7Ii8+PC9nPjwvZz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=">
-                </a>
-            </li>
-            <li>
-                <a class="no-hover-effect" href="https://goo.gl/forms/1dv6BeAipdIwUQs63" target="_blank">
-                    <img class="icons" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJmbGF0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgaWQ9Im1haWwiPjxwYXRoIGQ9Ik0zMCw2MCBDNDYuNTY4NTQzMyw2MCA2MCw0Ni41Njg1NDMzIDYwLDMwIEM2MCwxMy40MzE0NTY3IDQ2LjU2ODU0MzMsMCAzMCwwIEMxMy40MzE0NTY3LDAgMCwxMy40MzE0NTY3IDAsMzAgQzAsNDYuNTY4NTQzMyAxMy40MzE0NTY3LDYwIDMwLDYwIFoiIGZpbGw9IiMzNDk4REIiLz48cGF0aCBkPSJNMzAsMzMuNDYxNTM4NSBMNDcuMzA3NjkyMywxOC40NjE1Mzg1IEwxMi42OTIzMDc3LDE4LjQ2MTUzODUgTDMwLDMzLjQ2MTUzODUgWiBNMjUuMzI1MTc2NSwzMS44MDEwNTM2IEwzMCwzNS42MzgyMzk5IEwzNC42MDE1ODEzLDMxLjgwMTA1MzYgTDQ3LjMwNzY5MjMsNDIuNjkyMzA3NyBMMTIuNjkyMzA3Nyw0Mi42OTIzMDc3IEwyNS4zMjUxNzY1LDMxLjgwMTA1MzYgWiBNMTEuNTM4NDYxNSw0MS41Mzg0NjE1IEwxMS41Mzg0NjE1LDE5LjYxNTM4NDYgTDI0LjIzMDc2OTIsMzAuNTc2OTIzMSBMMTEuNTM4NDYxNSw0MS41Mzg0NjE1IFogTTQ4LjQ2MTUzODUsNDEuNTM4NDYxNSBMNDguNDYxNTM4NSwxOS42MTUzODQ2IEwzNS43NjkyMzA4LDMwLjU3NjkyMzEgTDQ4LjQ2MTUzODUsNDEuNTM4NDYxNSBaIiBmaWxsPSIjRkZGRkZGIi8+PC9nPjwvZz48L3N2Zz4=">
-                </a>
-            </li>
-        </ul>
-        <p>© <span id="current_year"></span> Haim Schlesinger</p>
-    </footer>
+        <!-- Right Screen (Bottom in responsive) -->
+        <div id="right" class="p-3">
+
+            <!-- Nav -->
+            <nav class="w-100">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="bio-tab" data-toggle="tab" href="#bio-info" role="tab" aria-controls="bio-info" aria-selected="true">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio-info" role="tab" aria-controls="portfolio-info" aria-selected="false">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br />
+
+            <div class="tab-content" id="myTabContent">
+
+
+                <!-- Bio -->
+                <div class="tab-pane fade show active" role="tabpanel" id="bio-info" aria-labelledby="bio-tab">
+                    <div id="bio">
+                        <div class="container">
+                            <section>
+                                <h4>Hi! I am Haim,</h4>
+                                <p>
+                                    I studied at <a href="http://www.ariel.ac.il/en" target="_blank">Ariel university</a> and after three years I graduated as a valedictorian on the dean's list with a B.Sc in Computer Science and Mathematics specializing
+                                    in Cyber Security. I am a Creative thinker, with a passion for problem solving. Fast learning and dedicated work are all part of what I bring to the table.
+                                </p>
+                                <p>
+
+                                    I served in the <a href="https://en.wikipedia.org/wiki/Israel_Defense_Forces" target="_blank">IDF</a> for 3 years, and started basic & combat training with <a href="https://en.wikipedia.org/wiki/Yahalom_(IDF)" target="_blank">Yahalom</a>                                    special forces, then continued on to become a commander of a platoon of 40 soldiers. In my last year of service I took part in "Tzuk Eitan" the most recent war in Israel and proudly defended my country. I finished my
+                                    service as a Sargent and was awarded a certificate of excellence.
+                                </p>
+                                <p>
+                                    I found that leadership and problem solving are a big part of who I am, and I take pride in delivering smart and creative software no matter the deadline.
+                                </p>
+
+                                <br />
+
+                                <h4>Things I can do for you</h4>
+
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Create a stunning website from conception to completion.
+                                        </li>
+                                        <li>
+                                            Design
+                                            <span class="bg-info px-1 rounded">MySQL</span>
+                                            <span class="bg-info px-1 rounded">MongoDB</span>
+                                            databases and implementing them in your application.
+                                        </li>
+                                        <li>
+                                            Check for security breaches and create smart software solutions, in <span class="bg-info px-1 rounded">C</span>
+                                            <span class="bg-info px-1 rounded">C++</span>
+                                            <span class="bg-info px-1 rounded">Java</span> or
+                                            <span class="bg-info px-1 rounded">Python</span>
+                                        </li>
+                                        <li>
+                                            Personalized software for company needs.
+                                        </li>
+                                    </ul>
+                                </p>
+
+                                <br />
+
+                                <p>
+                                    <span class="font-weight-bold h5">Let’s Talk</span>
+                                </p>
+                                <p>
+                                    Please feel free to contact me by email
+                                    <a href="mailto:shlez1993.hs@gmail.com">shlez1993.hs@gmail.com</a> or connect with me on my social links.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="tab-pane fade" role="tabpanel" id="portfolio-info" aria-labelledby="portfolio-tab">
+                    <div id="portfolio">
+                        <div class="container">
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/mivita.jpg"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <h2 class="mb-0">miVita</h2>
+                                        <em>Feb 2nd, 2018</em>
+                                    </div>
+                                    <p>
+                                        A web application for building custom resumes.
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">angularJS</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">NodeJS</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/synagogue.png"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <div class="mb-0">
+                                            <span class="h2">Synagogue App</span>
+                                            <span class="ml-1">
+                                                <a class="p-1" href="https://github.com/haim1993/synagogue" target="_blank">
+                                                    <i class="fab fa-github-alt"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+
+                                        <em>Nov 28th, 2017</em>
+                                    </div>
+                                    <p>
+                                        An application that helps the "Gabay" in a synagogue to manage easily the prayers dovening schedules, "Aliyot" and "Simcha" events.
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">android</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">firebase</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">python</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/hackau.png"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <div class="mb-0">
+                                            <span class="h2">HackAU</span>
+                                            <span class="ml-1">
+                                                <a class="p-1" href="https://github.com/HackAU" target="_blank">
+                                                    <i class="fab fa-github-alt"></i>
+                                                </a>
+                                                <a class="p-1" href="http://hack-au.com/" target="_blank">
+                                                    <i class="fas fa-link"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+
+                                        <em>Aug 18th, 2017</em>
+                                    </div>
+                                    <p>
+                                        HackAU is the first hackathon ever in ariel university. The hackathon is lead by an elite team of programmers known as Shlomi Alon, <a href="https://eladkeyshawn.com/" target="_blank">Elad Keyshawn</a> and me :)
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">angularJS</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">NodeJS</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/python-cyber-tool.jpg"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <div class="mb-0">
+                                            <span class="h2">Process Analyzer</span>
+                                            <span class="ml-1">
+                                                <a class="p-1" href="https://github.com/haim1993/Process-Service_Analyzer" target="_blank">
+                                                    <i class="fab fa-github-alt"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+
+                                        <em>Jun 2nd, 2017</em>
+                                    </div>
+                                    <p>
+                                        A linux based tool, that will allow the user to analyze the processes/services running on his system with a friendly interface.
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">python</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">linux</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/yahad.jpg"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <h2 class="mb-0">Yahad</h2>
+                                        <em>Sep 1st, 2016</em>
+                                    </div>
+                                    <p>
+                                        An application that will assist users to navigate through the city of Ariel in order to find businesses within their proximity.
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">android</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="project-item row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="images/dropit.png"></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-2">
+                                        <div class="mb-0">
+                                            <span class="h2">Dropit</span>
+                                            <span class="ml-1">
+                                                <a class="p-1" href="http://www.themedical.co.il/Article.aspx?f=18&s=5&id=3940" target="_blank">
+                                                    <i class="fas fa-link"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+
+                                        <em>Jun 18th, 2016</em>
+                                    </div>
+                                    <p>
+                                        An application that helps to reduce allergy casualties. "Dropit" was developed by me and my team in the "Merck" hackathon event, which we won first place.
+                                    </p>
+
+                                    <div class="row ml-0">
+                                        <span class="bg-info rounded p-1 px-2 m-1">android</span>
+                                        <span class="bg-info rounded p-1 px-2 m-1">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="javascript/index.js"></script>
+
 </body>
 
-<script>
-    (function() {
-        "use strict";
-        var toggles = document.querySelectorAll(".c-hamburger");
-
-        for (var i = toggles.length - 1; i >= 0; i--) {
-            var toggle = toggles[i];
-            toggleHandler(toggle);
-        };
-
-        function toggleHandler(toggle) {
-            toggle.addEventListener("click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active"): this.classList.add("is-active");
-            });
-        }
-    })();
-
-    document.getElementById("current_year").innerHTML = new Date().getFullYear();
-
-</script>
-
-</html>
+</head
