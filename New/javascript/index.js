@@ -3,6 +3,5 @@
             e.preventDefault()
             var $this = $(this);
             $(this).tab('show');
-
     });
 })();
