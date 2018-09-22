@@ -79,10 +79,10 @@ html, body {
         height: 100vh;
     }
     .left-bg-image {
-        background-size: auto;
+        background-size: 120%;
         background-attachment: fixed;
-        background-position-x: -15em;
-        background-position-y: -13em;;
+        background-position-x: -3em;
+        background-position-y: -8em;
     }
     #info {
         top: 40% !important;
@@ -115,11 +115,10 @@ html, body {
     }
     .left-bg-image {
         background-size: 175%;
-        transform: scale(0.7.);
         background-attachment: fixed;
-        background-position: center top;
+        background-position-x: -3em;
+        background-position-y: -5em;
         height: 100%;
-        z-index: -10;
     }
     #info {
         position: absolute;
