@@ -113,7 +113,13 @@ html, body {
     #left {
         height: 60vh;
     }
-
+    .left-bg-image {
+        background-size: 175%;
+        transform: scale(0.7.);
+        background-attachment: fixed;
+        background-position: center top;
+        height: 100%;;
+    }
     #info {
         position: absolute;
         top: 20%;
@@ -129,13 +135,5 @@ html, body {
         display: block !important;
         margin: auto !important;
         padding-bottom: 1em;
-    }    
-
-    .project-item:nth-child(1) {
-
-    }
-
-    .project-item:nth-child(2) {
-
     }
 }
