@@ -10,6 +10,7 @@ html, body {
 
 
 .left-bg-image {
+    display: block;
     background-image: url('../images/profile.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
